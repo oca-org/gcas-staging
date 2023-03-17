@@ -12,7 +12,8 @@ steps:
     name: "Merge multiple SBOMs using CycloneDX-cli"
     command: |
       # For more details, visit https://github.com/CycloneDX/cyclonedx-cli/blob/main/README.md
-      ./cyclonedx-linux-x64 merge --input-files maven-bom.json py-bom.json --output-file merged-bom.json
+      ll
+      sudo ./cyclonedx-linux-x64 merge --input-files maven-bom.json py-bom.json --output-file merged-bom.json
 outputArtifacts:
   - name: sbom
     type: BINARY

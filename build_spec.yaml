@@ -8,12 +8,14 @@ steps:
     name: "Download CycloneDx-cli executable"
     command: |
       wget https://github.com/CycloneDX/cyclonedx-cli/releases/download/v0.24.2/cyclonedx-linux-x64
+      yum install libicu
   - type: Command
     name: "Merge multiple SBOMs using CycloneDX-cli"
     command: |
       # For more details, visit https://github.com/CycloneDX/cyclonedx-cli/blob/main/README.md
       ls -ll
       chmod +x cyclonedx-linux-x64
+      ls -ll
       ./cyclonedx-linux-x64 merge --input-files maven-bom.json py-bom.json --output-file merged-bom.json
 outputArtifacts:
   - name: sbom

@@ -8,7 +8,7 @@ steps:
     name: "Download CycloneDx-cli executable"
     command: |
       wget https://github.com/CycloneDX/cyclonedx-cli/releases/download/v0.24.2/cyclonedx-linux-x64
-      yum install libicu
+      yum install -y libicu
   - type: Command
     name: "Merge multiple SBOMs using CycloneDX-cli"
     command: |

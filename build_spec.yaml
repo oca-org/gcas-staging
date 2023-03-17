@@ -1,15 +1,19 @@
-version: 11.1
+version: 0.1
 component: build
 timeoutInSeconds: 1000
 shell: bash
 
 steps:
   - type: Command
-    name: "compress the repo"
+    name: "Download CycloneDx-cli executable"
     command: |
-      tar -cvzf repo.tgz ./
-      ls
+      wget https://github.com/CycloneDX/cyclonedx-cli/releases/download/v0.24.2/cyclonedx-linux-x64
+  - type: Command
+    name: "Merge multiple SBOMs using CycloneDX-cli"
+    command: |
+      # For more details, visit https://github.com/CycloneDX/cyclonedx-cli/blob/main/README.md
+      ./cyclonedx-linux-x64 merge --input-files maven-bom.json py-bom.json --output-file merged-bom.json
 outputArtifacts:
-  - name: artifact
+  - name: sbom
     type: BINARY
-    location: ${OCI_PRIMARY_SOURCE_DIR}/repo.tgz
+    location: ${OCI_PRIMARY_SOURCE_DIR}/merged-bom.json

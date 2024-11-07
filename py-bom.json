@@ -1,15 +1,15 @@
 {
     "$schema": "http://cyclonedx.org/schema/bom-1.4.schema.json",
     "bomFormat": "CycloneDX",
-    "specVersion": "1.4",
+    "specVersion": "1.3",
     "serialNumber": "urn:uuid:18d27fab-800e-4ac4-a9ab-9eebbaabd1c6",
     "version": 1,
     "metadata": {
         "timestamp": "2023-03-16T14:05:51.526056+00:00",
         "tools": [
             {
-                "vendor": "CycloneDX",
-                "name": "cyclonedx-bom",
+                "vendor": "CycloneDXX",
+                "name": "cyclonedx-bomm",
                 "version": "3.11.0"
             },
             {

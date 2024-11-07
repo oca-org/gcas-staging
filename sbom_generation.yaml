@@ -8,6 +8,8 @@ steps:
     name: "already computed SBOM but steps should not be null"
     command: |
       echo hello
+      echo "test"
+      echo "test22"
 outputArtifacts:
   - name: artifactSBOM
     type: BINARY

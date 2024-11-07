@@ -9,7 +9,7 @@
         "tools": [
             {
                 "vendor": "CycloneDX",
-                "name": "cyclonedx-bom",
+                "name": "cyclonedx-bomb",
                 "version": "3.11.0"
             },
             {

@@ -9,7 +9,7 @@ steps:
     command: |
       echo hello
       echo "test"
-      echo "test2"
+      echo "test22"
 outputArtifacts:
   - name: artifactSBOM
     type: BINARY

@@ -11,11 +11,6 @@ env:
 
 steps:
   - type: Command
-    name: "Download and extract the repo from GitHub"
-    command: |
-      mkdir github-artifact
-      curl -sS -L -H "Authorization: token ${INPUT_GITHUB_TOKEN}" https://api.github.com/repos/${INPUT_REPOSITORY_FULL_NAME}/tarball/${INPUT_COMMIT_ID} | tar -xz --strip-components=1 --directory=github-artifact
-  - type: Command
     name: "Download the version 10.10.0 of cdxgen globally"
     command: |
       npm install -g @cyclonedx/cdxgen@10.10.0
@@ -28,7 +23,6 @@ steps:
   - type: Command
     name: "Run cycloneDX SBOM generation command"
     command: |
-      cd $OCI_PRIMARY_SOURCE_DIR/github-artifact
       input=${INPUT_AUTO_BUILD_TYPES}
       [ -z "$input" ] && exit 1
       IFS=', ' read -r -a ecosystems <<< "$input"

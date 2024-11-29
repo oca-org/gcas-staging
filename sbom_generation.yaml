@@ -75,7 +75,6 @@ steps:
       EOF
             $GRADLE_CMD --init-script init.gradle cyclonedxBom -info
             sbom_files+=("$sbom_file")
-            done < gradle_files.txt
             ;;
           NPM)
             echo "[GCAS-INFO] : Npm found"

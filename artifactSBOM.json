@@ -1,47 +1,47 @@
 {
     "bomFormat": "CycloneDX",
     "specVersion": "1.4",
-    "serialNumber": "urn:uuid:1615ec76-d061-42df-85cd-92ecad8af88b",
+    "serialNumber": "urn:uuid:3da55368-b6da-42c8-a156-dc52a3a038c2",
     "version": 1,
     "metadata": {
-        "timestamp": "2023-10-18T13:39:02Z",
+        "timestamp": "2023-10-19T14:11:45Z",
         "tools": [
             {
                 "vendor": "OWASP Foundation",
-                "name": "CycloneDX Maven plugin",
-                "version": "2.7.9",
+                "name": "CycloneDX Maven plugin makeAggregateBom",
+                "version": "2.7.5",
                 "hashes": [
                     {
                         "alg": "MD5",
-                        "content": "8e595cdb67f17e4b41e046456970591d"
+                        "content": "11cd12fd5f8b60a961c385ef2be00f52"
                     },
                     {
                         "alg": "SHA-1",
-                        "content": "69e8ca804520d09ce4657e7235bae84d01cbffa6"
+                        "content": "3576a6392958d12709ba803922ca8ee0c7a233ed"
                     },
                     {
                         "alg": "SHA-256",
-                        "content": "aa09074fe5aa403c008cd4fc7ef8ce41cd244489337f16b3e91a3914158a4db8"
+                        "content": "802bf55759d1a44b12e01879614bae19c096302d881d1b52bf36e6051b9dc1ef"
                     },
                     {
                         "alg": "SHA-512",
-                        "content": "1488a8112da8e675813d7585f57c5efb178aed32901118186ee12d0e4ae3d19c53774c7f860bf70d17d70f050119b69443a2637cf641675b4b5d9cdcdd69b89b"
+                        "content": "779fc38723c9b02448a7cd16c432cb6504771ea5969eedb5ce72bcb96b58d0f52c3ee534f38f88e26967e2a18c93b307bbc98a65ad346df0859af89f7d963c2c"
                     },
                     {
                         "alg": "SHA-384",
-                        "content": "b097295dfbf10887abc6eec58d4d0822cde5a73d1f5c1cf183a57bf569016ad5ced9d34efae3e574d82bb62837540c6c"
+                        "content": "4caddd8effbaa3379638798216c03a881e1eef799c0f179fde19dbfb038a2a12c261bfd28b18594052787f5460429584"
                     },
                     {
                         "alg": "SHA3-384",
-                        "content": "289f9520bd73a2031276248a6ef8f0891c691062c2d1ea86a2bc9ea8db2c52377d92a53be9957179e71aee3deda26a8c"
+                        "content": "490cc3412260a126b0cea502da5338e47b6e354338c128c588d7d0ab776e0ed15398d6f1042c8a5f3a98a152323a0c18"
                     },
                     {
                         "alg": "SHA3-256",
-                        "content": "32b50a7efe5d491a4039c0017eca3cf49d98b55fc66d06b3dd06209487323474"
+                        "content": "538aa1dfe3e87abb3b4608b2d53508eb13f9a3d2b735f6fd7287bb285c938d78"
                     },
                     {
                         "alg": "SHA3-512",
-                        "content": "1daf813da53e5d5cda4d0302ff3a5e388aa45d96ebe6dcbe240f35d33f14b1e6390f6bbe7f21f3ed8cf96ebd9f5516a08b18487b7339715109c81cebfc1563df"
+                        "content": "5a18cc565eb102ce88049b104fa283b1510866ac945286c9e5de1f7f8a098246c881289eda147c1a130c231b8092099faa7caa149d4651f68c215f40eab3425b"
                     }
                 ]
             }
@@ -72,17 +72,7 @@
             ],
             "type": "library",
             "bom-ref": "pkg:maven/com.oracle.nosql.sdk/nosql-java-sdk@5.4.13?type=pom"
-        },
-        "properties": [
-            {
-                "name": "maven.goal",
-                "value": "makeAggregateBom"
-            },
-            {
-                "name": "maven.scopes",
-                "value": "compile,runtime"
-            }
-        ]
+        }
     },
     "components": [
         {
@@ -117,41 +107,41 @@
             "publisher": "FasterXML",
             "group": "com.fasterxml.jackson.core",
             "name": "jackson-core",
-            "version": "2.15.2",
+            "version": "2.15.3",
             "description": "Core Jackson processing abstractions (aka Streaming API), implementation for JSON",
-            "scope": "required",
+            "scope": "optional",
             "hashes": [
                 {
                     "alg": "MD5",
-                    "content": "e51fdee85b48e6637ad9e85ee76b58df"
+                    "content": "c86c75392bf138d54d2a219bb1d0cbcd"
                 },
                 {
                     "alg": "SHA-1",
-                    "content": "a6fe1836469a69b3ff66037c324d75fc66ef137c"
+                    "content": "60d600567c1862840397bf9ff5a92398edc5797b"
                 },
                 {
                     "alg": "SHA-256",
-                    "content": "303c99e82b1faa91a0bae5d8fbeb56f7e2adf9b526a900dd723bf140d62bd4b4"
+                    "content": "51fab7aad51ed588482edc507fd542747936c5094d1ab76ed21ddb63b96b610d"
                 },
                 {
                     "alg": "SHA-512",
-                    "content": "a8a3ddf5c8a732fc3810f9c113d88fd59bf613d15dbf9d3e24dd196b2b8c2195f4088375e3d03906f2629e62983fef3267b5478abd5ab1df733ec58cd00efae6"
+                    "content": "112de40a31dc7d011f256f1d2fe0d9e2afc301a1f31974318f8d070c3e362b2ba96005167384244f630b915451db6694bd3cf6a9b793872351bc18f21c9de5e4"
                 },
                 {
                     "alg": "SHA-384",
-                    "content": "22f4b71de5860b9c54dd85091d5b1312f7f5097a376f68f5a35b32a342858bf2e24ed394d76be0648545a6137d78b82e"
+                    "content": "9daaf08467525e462234c53ddbf7287bcef15d8df7fbc64bcd558a91d11e8335b3a79368d194b126d3c8fb846800025b"
                 },
                 {
                     "alg": "SHA3-384",
-                    "content": "bf7f6d6d6898978d2ca11e924f0268a90adbb6f6f88b1402e7c96b6fba76ff4e7d83ba163d10b1c551443c3b3cdef9d2"
+                    "content": "0b4fdc8d11fc060461e74e773fce2e64d1a98bed7db6edf51784bb1b801da4bae744a2958e81c2e24cb992fec892fb6c"
                 },
                 {
                     "alg": "SHA3-256",
-                    "content": "fa5ecb4b5ab9884403d5001dd368be876e10daf90e91fccfdf6fb21f14563c15"
+                    "content": "751ad4f10a78cb36fccbbe1dfe208816f17619edd5adeabc86b7509201e03c3d"
                 },
                 {
                     "alg": "SHA3-512",
-                    "content": "1e8648a4c8aac64f0f71787ec6dd4693a30fe0e3c1fb78ce12b2a1865d17d7f9788c085ed1ac1216e45c05f582a0764d8fee44cf18cc90403846d255fe778c7b"
+                    "content": "aa5807b7d92d150fada6a4ecdbfce998bbea825a09af8381127ba3736de029ae9923f54d770b2e5c3f5c85d9b4bcf21e6893a5a3089db2d02f1432b85dfa0fe7"
                 }
             ],
             "licenses": [
@@ -161,7 +151,7 @@
                     }
                 }
             ],
-            "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.15.2?type=jar",
+            "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.15.3?type=jar",
             "externalReferences": [
                 {
                     "type": "website",
@@ -181,7 +171,7 @@
                 }
             ],
             "type": "library",
-            "bom-ref": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.15.2?type=jar"
+            "bom-ref": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.15.3?type=jar"
         },
         {
             "publisher": "The Netty Project",
@@ -189,7 +179,7 @@
             "name": "netty-buffer",
             "version": "4.1.94.Final",
             "description": "Netty is an asynchronous event-driven network application framework for rapid development of maintainable high performance protocol servers and clients.",
-            "scope": "required",
+            "scope": "optional",
             "hashes": [
                 {
                     "alg": "MD5",
@@ -255,7 +245,6 @@
             "name": "netty-common",
             "version": "4.1.94.Final",
             "description": "Netty is an asynchronous event-driven network application framework for rapid development of maintainable high performance protocol servers and clients.",
-            "scope": "required",
             "hashes": [
                 {
                     "alg": "MD5",
@@ -321,7 +310,7 @@
             "name": "netty-codec-http",
             "version": "4.1.94.Final",
             "description": "Netty is an asynchronous event-driven network application framework for rapid development of maintainable high performance protocol servers and clients.",
-            "scope": "required",
+            "scope": "optional",
             "hashes": [
                 {
                     "alg": "MD5",
@@ -387,7 +376,6 @@
             "name": "netty-transport",
             "version": "4.1.94.Final",
             "description": "Netty is an asynchronous event-driven network application framework for rapid development of maintainable high performance protocol servers and clients.",
-            "scope": "required",
             "hashes": [
                 {
                     "alg": "MD5",
@@ -453,7 +441,6 @@
             "name": "netty-codec",
             "version": "4.1.94.Final",
             "description": "Netty is an asynchronous event-driven network application framework for rapid development of maintainable high performance protocol servers and clients.",
-            "scope": "required",
             "hashes": [
                 {
                     "alg": "MD5",
@@ -519,7 +506,7 @@
             "name": "netty-handler",
             "version": "4.1.94.Final",
             "description": "Netty is an asynchronous event-driven network application framework for rapid development of maintainable high performance protocol servers and clients.",
-            "scope": "required",
+            "scope": "optional",
             "hashes": [
                 {
                     "alg": "MD5",
@@ -585,7 +572,6 @@
             "name": "netty-resolver",
             "version": "4.1.94.Final",
             "description": "Netty is an asynchronous event-driven network application framework for rapid development of maintainable high performance protocol servers and clients.",
-            "scope": "required",
             "hashes": [
                 {
                     "alg": "MD5",
@@ -651,7 +637,6 @@
             "name": "netty-transport-native-unix-common",
             "version": "4.1.94.Final",
             "description": "Static library which contains common unix utilities.",
-            "scope": "required",
             "hashes": [
                 {
                     "alg": "MD5",
@@ -717,7 +702,7 @@
             "name": "netty-handler-proxy",
             "version": "4.1.94.Final",
             "description": "Netty is an asynchronous event-driven network application framework for rapid development of maintainable high performance protocol servers and clients.",
-            "scope": "required",
+            "scope": "optional",
             "hashes": [
                 {
                     "alg": "MD5",
@@ -783,7 +768,6 @@
             "name": "netty-codec-socks",
             "version": "4.1.94.Final",
             "description": "Netty is an asynchronous event-driven network application framework for rapid development of maintainable high performance protocol servers and clients.",
-            "scope": "required",
             "hashes": [
                 {
                     "alg": "MD5",
@@ -848,7 +832,7 @@
             "name": "bcprov-jdk18on",
             "version": "1.76",
             "description": "The Bouncy Castle Crypto package is a Java implementation of cryptographic algorithms. This jar contains JCE provider and lightweight API for the Bouncy Castle Cryptography APIs for JDK 1.8 and up.",
-            "scope": "required",
+            "scope": "optional",
             "hashes": [
                 {
                     "alg": "MD5",
@@ -914,7 +898,7 @@
             "name": "bcpkix-jdk18on",
             "version": "1.76",
             "description": "The Bouncy Castle Java APIs for CMS, PKCS, EAC, TSP, CMP, CRMF, OCSP, and certificate generation. This jar contains APIs for JDK 1.8 and up. The APIs can be used in conjunction with a JCE/JCA provider such as the one provided with the Bouncy Castle Cryptography APIs.",
-            "scope": "required",
+            "scope": "optional",
             "hashes": [
                 {
                     "alg": "MD5",
@@ -976,6 +960,141 @@
             "bom-ref": "pkg:maven/org.bouncycastle/bcpkix-jdk18on@1.76?type=jar"
         },
         {
+            "publisher": "JUnit",
+            "group": "junit",
+            "name": "junit",
+            "version": "4.13.1",
+            "description": "JUnit is a unit testing framework for Java, created by Erich Gamma and Kent Beck.",
+            "scope": "optional",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "83d91f209ddcb104776fa41c448c7ee2"
+                },
+                {
+                    "alg": "SHA-1",
+                    "content": "cdd00374f1fee76b11e2a9d127405aa3f6be5b6a"
+                },
+                {
+                    "alg": "SHA-256",
+                    "content": "c30719db974d6452793fe191b3638a5777005485bae145924044530ffa5f6122"
+                },
+                {
+                    "alg": "SHA-512",
+                    "content": "29769fb462c7db2fcca6de3a24b445ae252a7570950f9a2163e14c478f854e47056444d90b2d40f4cf4e3f37c03faacf694c2db12763e173c44362af50176b1f"
+                },
+                {
+                    "alg": "SHA-384",
+                    "content": "f98da9852bdc5fc022399a85c1fa234ba80d3bf8f492034971175f70464cd9f2d08d65954f92f33ae250050d9f5ae160"
+                },
+                {
+                    "alg": "SHA3-384",
+                    "content": "79a11e53c134bf2a6fcffd64b1371bacdcbda3eff96094970a5123fb9eaca195044313a647ed7bfa21c0ef9f36994bd2"
+                },
+                {
+                    "alg": "SHA3-256",
+                    "content": "2c44fd3ad2e0e1f2f5ce27f9efd357cecdeb38d074ac8bb23fbd7be683c53e99"
+                },
+                {
+                    "alg": "SHA3-512",
+                    "content": "c34310659381936cf3f16a58f90372a2a3829e020889a7cab118127e6c96e5dc120f350a89d56abfffbfe1862aca51e8e419f48429fb8e5ea3a54f0b3ef809c2"
+                }
+            ],
+            "licenses": [
+                {
+                    "license": {
+                        "id": "EPL-1.0",
+                        "url": "http://www.eclipse.org/legal/epl-v10.html"
+                    }
+                }
+            ],
+            "purl": "pkg:maven/junit/junit@4.13.1?type=jar",
+            "externalReferences": [
+                {
+                    "type": "website",
+                    "url": "http://junit.org"
+                },
+                {
+                    "type": "build-system",
+                    "url": "https://travis-ci.org/junit-team/junit4"
+                },
+                {
+                    "type": "distribution",
+                    "url": "https://github.com/junit-team/junit4/wiki/Download-and-Install"
+                },
+                {
+                    "type": "issue-tracker",
+                    "url": "https://github.com/junit-team/junit4/issues"
+                },
+                {
+                    "type": "vcs",
+                    "url": "https://github.com/junit-team/junit4"
+                }
+            ],
+            "type": "library",
+            "bom-ref": "pkg:maven/junit/junit@4.13.1?type=jar"
+        },
+        {
+            "group": "org.hamcrest",
+            "name": "hamcrest-core",
+            "version": "1.3",
+            "description": "This is the core API of hamcrest matcher framework to be used by third-party framework providers. This includes the a foundation set of matcher implementations for common operations.",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "6393363b47ddcbba82321110c3e07519"
+                },
+                {
+                    "alg": "SHA-1",
+                    "content": "42a25dc3219429f0e5d060061f71acb49bf010a0"
+                },
+                {
+                    "alg": "SHA-256",
+                    "content": "66fdef91e9739348df7a096aa384a5685f4e875584cce89386a7a47251c4d8e9"
+                },
+                {
+                    "alg": "SHA-512",
+                    "content": "e237ae735aac4fa5a7253ec693191f42ef7ddce384c11d29fbf605981c0be077d086757409acad53cb5b9e53d86a07cc428d459ff0f5b00d32a8cbbca390be49"
+                },
+                {
+                    "alg": "SHA-384",
+                    "content": "4b5297d2a12cc32b824153afc83f1ba9f1869ca288330f0a2f759659d09e4c420eb6ba4a1efbfa0657b625edd41293d5"
+                },
+                {
+                    "alg": "SHA3-384",
+                    "content": "b14d34985c0a78cf0ba19b5a18bffd403e08adcb2afde228ddef6e16121c7046dbebf58c04d3419311c4496c48aa93be"
+                },
+                {
+                    "alg": "SHA3-256",
+                    "content": "f679af77deedf69b3c3066f7916583848c6fd32a950f9c0b0e2ef1da121717ba"
+                },
+                {
+                    "alg": "SHA3-512",
+                    "content": "bca821931e438a1977b7b4356b5f8cebf485634f82159d505c48267c34e6a0f4fde9c2917331365f66dc0e52e2ca3a2db5256863584110c27ecebefc28741f63"
+                }
+            ],
+            "licenses": [
+                {
+                    "license": {
+                        "id": "BSD-3-Clause"
+                    }
+                }
+            ],
+            "purl": "pkg:maven/org.hamcrest/hamcrest-core@1.3?type=jar",
+            "externalReferences": [
+                {
+                    "type": "website",
+                    "url": "https://github.com/hamcrest/JavaHamcrest/hamcrest-core"
+                },
+                {
+                    "type": "vcs",
+                    "url": "https://github.com/hamcrest/JavaHamcrest/hamcrest-core"
+                }
+            ],
+            "type": "library",
+            "bom-ref": "pkg:maven/org.hamcrest/hamcrest-core@1.3?type=jar"
+        },
+        {
             "group": "com.oracle.nosql.sdk",
             "name": "nosql-java-sdk-examples",
             "version": "5.4.13",
@@ -990,23 +1109,94 @@
             ],
             "type": "library",
             "bom-ref": "pkg:maven/com.oracle.nosql.sdk/nosql-java-sdk-examples@5.4.13?type=jar"
+        },
+        {
+            "publisher": "FasterXML",
+            "group": "com.fasterxml.jackson.core",
+            "name": "jackson-core",
+            "version": "2.13.4",
+            "description": "Core Jackson processing abstractions (aka Streaming API), implementation for JSON",
+            "scope": "optional",
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "e8f064827ddb8deb06e45d20988bcaa5"
+                },
+                {
+                    "alg": "SHA-1",
+                    "content": "0cf934c681294b97ef6d80082faeefbe1edadf56"
+                },
+                {
+                    "alg": "SHA-256",
+                    "content": "4c2e043200edd9ee7ba6fc378bd5c17784a5bf2388e152d208068b51fd0839cf"
+                },
+                {
+                    "alg": "SHA-512",
+                    "content": "cf54bf5be3a5015a4b2c3ac986bf01f64517df224c8ba67197118d06f7fbe8ad64e39d002df326a72feb5aec8f0bc7f15338e90c4ba0668a167a0f03a81ce47f"
+                },
+                {
+                    "alg": "SHA-384",
+                    "content": "5fd2723a9f5bae811e71b596180c56355497f87cdd6c9bdc74716224ea1d133b6ed4e5df20b6ec169b3745066019ad94"
+                },
+                {
+                    "alg": "SHA3-384",
+                    "content": "47217ac4e35397ed519916b26ec780ecbff69de0069afcbf9329a84f52b0e8fc4700e0c7b6bce7b9ddf585df7d944f22"
+                },
+                {
+                    "alg": "SHA3-256",
+                    "content": "2be4b3203664ef4249d40af8d3ea9516805a573515a8ece27c5e625c0969ed0f"
+                },
+                {
+                    "alg": "SHA3-512",
+                    "content": "75b4fa4464de9e5efbed460b940ef79b34fc7c477cb61540960f6e56039915a520176d6bf42077453cb049ec184d3b6d88006a4016a02b5de87da907d8c0791a"
+                }
+            ],
+            "licenses": [
+                {
+                    "license": {
+                        "id": "Apache-2.0"
+                    }
+                }
+            ],
+            "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.13.4?type=jar",
+            "externalReferences": [
+                {
+                    "type": "website",
+                    "url": "https://github.com/FasterXML/jackson-core"
+                },
+                {
+                    "type": "distribution",
+                    "url": "https://oss.sonatype.org/service/local/staging/deploy/maven2/"
+                },
+                {
+                    "type": "issue-tracker",
+                    "url": "https://github.com/FasterXML/jackson-core/issues"
+                },
+                {
+                    "type": "vcs",
+                    "url": "http://github.com/FasterXML/jackson-core"
+                }
+            ],
+            "type": "library",
+            "bom-ref": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.13.4?type=jar"
         }
     ],
     "dependencies": [
         {
             "ref": "pkg:maven/com.oracle.nosql.sdk/nosqldriver@5.4.13?type=jar",
             "dependsOn": [
-                "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.15.2?type=jar",
+                "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.15.3?type=jar",
                 "pkg:maven/io.netty/netty-buffer@4.1.94.Final?type=jar",
                 "pkg:maven/io.netty/netty-codec-http@4.1.94.Final?type=jar",
                 "pkg:maven/io.netty/netty-handler@4.1.94.Final?type=jar",
                 "pkg:maven/io.netty/netty-handler-proxy@4.1.94.Final?type=jar",
                 "pkg:maven/org.bouncycastle/bcprov-jdk18on@1.76?type=jar",
-                "pkg:maven/org.bouncycastle/bcpkix-jdk18on@1.76?type=jar"
+                "pkg:maven/org.bouncycastle/bcpkix-jdk18on@1.76?type=jar",
+                "pkg:maven/junit/junit@4.13.1?type=jar"
             ]
         },
         {
-            "ref": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.15.2?type=jar",
+            "ref": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.15.3?type=jar",
             "dependsOn": []
         },
         {
@@ -1099,6 +1289,16 @@
             "dependsOn": []
         },
         {
+            "ref": "pkg:maven/junit/junit@4.13.1?type=jar",
+            "dependsOn": [
+                "pkg:maven/org.hamcrest/hamcrest-core@1.3?type=jar"
+            ]
+        },
+        {
+            "ref": "pkg:maven/org.hamcrest/hamcrest-core@1.3?type=jar",
+            "dependsOn": []
+        },
+        {
             "ref": "pkg:maven/com.oracle.nosql.sdk/nosql-java-sdk-examples@5.4.13?type=jar",
             "dependsOn": [
                 "pkg:maven/com.oracle.nosql.sdk/nosqldriver@5.4.13?type=jar"
@@ -1106,6 +1306,12 @@
         },
         {
             "ref": "pkg:maven/com.oracle.nosql.sdk/nosql-java-sdk@5.4.13?type=pom",
+            "dependsOn": [
+                "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.13.4?type=jar"
+            ]
+        },
+        {
+            "ref": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.13.4?type=jar",
             "dependsOn": []
         }
     ]

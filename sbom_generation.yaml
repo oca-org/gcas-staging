@@ -2,12 +2,19 @@ version: 0.1
 component: build
 timeoutInSeconds: 1000
 shell: bash
+env:
+  variables:
+    PYTHON_CMD: "python3"
 
 steps:
   - type: Command
     name: "already computed SBOM but steps should not be null"
     command: |
       echo hello
+      echo "Python 2 version"
+      python --version
+      echo "python 3 version"
+      python3 --version
 outputArtifacts:
   - name: artifactSBOM
     type: BINARY
